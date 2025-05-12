@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWIT Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Login Form -->
+    <div id="login-form" class="login-container">
+        <div class="login-box">
+            <h2>SWIT Admin Login</h2>
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" id="username">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" id="password">
+            </div>
+            <button onclick="login()" class="btn-primary">Login</button>
+        </div>
+    </div>
+
+    <!-- Admin Panel (initially hidden) -->
+    <div id="admin-panel" class="admin-container" style="display: none;">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">SWIT Admin</div>
+            <nav>
+                <ul>
+                    <li data-section="hero" class="active">Hero Section</li>
+                    <li data-section="about">About Section</li>
+                    <li data-section="projects">Projects</li>
+                    <li data-section="contact">Contact Form</li>
+                    <li data-section="theme">Theme Settings</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section Settings -->
+            <section id="hero" class="settings-section active">
+                <h2>Hero Section Settings</h2>
+                <div class="form-group">
+                    <label>Logo Image</label>
+                    <div class="logo-preview-container">
+                        <img id="logo-preview" src="" alt="Logo preview" style="display: none; max-width: 200px;">
+                    </div>
+                    <input type="file" id="logo-upload" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label>Agency Name</label>
+                    <input type="text" id="agency-name" value="SWIT">
+                </div>
+                <div class="form-group">
+                    <label>Slogan</label>
+                    <input type="text" id="agency-slogan" value="Crafting Digital Excellence">
+                </div>
+                <div class="form-group">
+                    <label>CTA Button Text</label>
+                    <input type="text" id="cta-text" value="Get Started">
+                </div>
+            </section>
+
+            <!-- About Section Settings -->
+            <section id="about" class="settings-section">
+                <h2>About Section Settings</h2>
+                <div class="form-group">
+                    <label>About Description</label>
+                    <textarea id="about-description" rows="4"></textarea>
+                </div>
+                <div class="values-container">
+                    <h3>Values</h3>
+                    <div id="values-list">
+                        <!-- Values will be dynamically added here -->
+                    </div>
+                    <button id="add-value" class="btn-secondary">Add Value</button>
+                </div>
+            </section>
+
+            <!-- Projects Section Settings -->
+            <section id="projects" class="settings-section">
+                <h2>Projects Settings</h2>
+                <div id="projects-list">
+                    <!-- Projects will be dynamically added here -->
+                </div>
+                <button id="add-project" class="btn-secondary">Add Project</button>
+            </section>
+
+            <!-- Contact Form Settings -->
+            <section id="contact" class="settings-section">
+                <h2>Contact Form Settings</h2>
+                <div class="form-group">
+                    <label>Form Title</label>
+                    <input type="text" id="contact-title" value="Contact Us">
+                </div>
+                <div class="form-group">
+                    <label>Email Recipient</label>
+                    <input type="email" id="contact-email">
+                </div>
+            </section>
+
+            <!-- Theme Settings -->
+            <section id="theme" class="settings-section">
+                <h2>Theme Settings</h2>
+                <div class="form-group">
+                    <label>Favicon</label>
+                    <div class="favicon-preview-container">
+                        <img id="favicon-preview" src="" alt="Favicon preview" style="display: none; width: 32px;">
+                    </div>
+                    <input type="file" id="favicon-upload" accept="image/x-icon,image/png,image/jpeg">
+                    <small>Recommended: 32x32px .ico or .png file</small>
+                </div>
+                <div class="form-group">
+                    <label>Primary Color</label>
+                    <input type="color" id="primary-color" value="#00f0ff">
+                </div>
+                <div class="form-group">
+                    <label>Background Color</label>
+                    <input type="color" id="background-color" value="#0a0a0a">
+                </div>
+                <div class="form-group">
+                    <label>Text Color</label>
+                    <input type="color" id="text-color" value="#ffffff">
+                </div>
+                <div class="form-group">
+                    <label>Accent Color</label>
+                    <input type="color" id="accent-color" value="#ff3366">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Save Changes Button -->
+    <div class="save-container">
+        <button id="save-changes" class="btn-primary">Save Changes</button>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
