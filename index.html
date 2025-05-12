@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SWIT - Modern Digital Agency specializing in creative digital solutions">
+    <link rel="icon" type="image/x-icon" id="favicon-element">
+    <title>SWIT - Modern Digital Agency</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="settings-loader.js"></script>
+</head>
+<body>
+    <!-- Intro Animation -->
+    <div class="intro-animation">
+        <div class="intro-logo">
+            <span class="logo-text">SWIT</span>
+            <div class="logo-line"></div>
+        </div>
+        <audio id="intro-sound" preload="auto">
+            <source src="assets/audio/intro.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo-wrapper">
+                    <img id="site-logo" src="" alt="SWIT Logo" style="display: none;">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="logo-container">
+                <img id="site-logo" src="" alt="SWIT Logo" style="display: none;">
+            </div>
+            <h1>SWIT</h1>
+            <p class="slogan">Crafting Digital Excellence</p>
+            <button class="cta-button">Get Started</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>We are SWIT, a forward-thinking digital agency dedicated to transforming ideas into exceptional digital experiences. Our team combines creativity with technical expertise to deliver solutions that make an impact.</p>
+                <div class="values">
+                    <div class="value-item">
+                        <h3>Innovation</h3>
+                        <p>Pushing boundaries in digital solutions</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>Quality</h3>
+                        <p>Delivering excellence in every project</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>Collaboration</h3>
+                        <p>Working together for better results</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2>Our Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3>Project One</h3>
+                    <p>Digital transformation project</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3>Project Two</h3>
+                    <p>E-commerce solution</p>
+                </div>
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3>Project Three</h3>
+                    <p>Brand identity design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 SWIT. All rights reserved.</p>
+                <a href="resume.pdf" class="resume-button" download>Download Resume</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
